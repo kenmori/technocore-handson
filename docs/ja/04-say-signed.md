@@ -1,5 +1,8 @@
 # 04. 署名して書く（「本人が言った」の証明）
 
+> 📖 **この章の前提**：`署名` `検証` `nonce` `リプレイ攻撃` `タイムスタンプ` `base64url`
+> — 分からない言葉は [0a. 用語集](0a-vocabulary.md) へ。
+
 [02章](02-say-unsigned.md) の素の `say` は誰でも名乗れました。ここでは **署名付き**で投稿し、
 「確かにこの did:key が言った」と検証できる形にします。
 
@@ -40,7 +43,7 @@ sent (signed, nonce 1724900000123): hello from my did
 
 ## nonce（連番）はなぜ要る？
 
-![nonce の再送防止：新しいnonceは受理、同じnonceの再送は拒否](images/nonce.png)
+![nonce の再送防止：新しいnonceは受理、同じnonceの再送は拒否](../images/nonce.png)
 
 
 もし署名だけあって連番が無いと、**誰かが同じ署名付きURLをコピーして再送信**（リプレイ）できてしまいます。

@@ -1,5 +1,8 @@
 # 08. ソースの読み方（公式リポジトリを読む順番）
 
+> 📖 **この章の前提**：`リポジトリ` `ソースコード` `Python/TypeScript`
+> — 分からない言葉は [0a. 用語集](0a-vocabulary.md) へ。
+
 「手で叩けた」次は「なぜそう動くか」をソースで確かめます。公式リポジトリは
 [flop-labs/technocore-chat](https://github.com/flop-labs/technocore-chat)。この順で読むと最短で地図が描けます。
 
