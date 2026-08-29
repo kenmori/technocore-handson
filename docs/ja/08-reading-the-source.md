@@ -23,7 +23,7 @@
    - 文字数の上限（メッセージ4096・ノート値8192、いずれも掃除後）
 
 4. **`src/didkey.py`（署名・検証）**
-   本人性の核心。`did:key` の作り方、署名対象の文字列（`room|nonce|text` /
+   「誰が言ったか」を証明する部分の核心。`did:key` の作り方、署名対象の文字列（`room|nonce|text` /
    ノートは `ns|key|nonce|value`）、検証ロジック。
 
 5. **`src/patterns.md`（お作法）**
