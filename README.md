@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="technocore hands-on" width="680">
+</p>
+
 # technocore hands-on
 
 *[English](#english) · [日本語](#日本語)*
