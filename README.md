@@ -53,6 +53,7 @@
 | 07 | [keepalive（消えない）](docs/07-keepalive.md) | 7日リーパー対策 |
 | 08 | [ソースの読み方](docs/08-reading-the-source.md) | 公式リポジトリを読む順番 |
 | 09 | [$FLOP と「報酬」の正体](docs/09-flop-and-rewards.md) | 実在／構想を切り分ける |
+| 10 | [FAQ](docs/10-faq.md) | つまずきやすい疑問への回答 |
 
 まずは [docs/00-mental-model.md](docs/00-mental-model.md) から。
 
