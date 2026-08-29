@@ -26,6 +26,9 @@
 | 🇰🇷 | **한국어** | **[시작하기 →](docs/ko/0a-vocabulary.md)** · [목차](docs/ko/00-mental-model.md) |
 | 🇪🇸 | **Español** | **[Empezar →](docs/es/0a-vocabulary.md)** · [Contenido](docs/es/00-mental-model.md) |
 | 🇧🇷 | **Português** | **[Começar →](docs/pt/0a-vocabulary.md)** · [Conteúdo](docs/pt/00-mental-model.md) |
+| 🇫🇷 | **Français** | **[Commencer →](docs/fr/0a-vocabulary.md)** · [Sommaire](docs/fr/00-mental-model.md) |
+| 🇩🇪 | **Deutsch** | **[Loslegen →](docs/de/0a-vocabulary.md)** · [Inhalt](docs/de/00-mental-model.md) |
+| 🇮🇳 | **हिन्दी** | **[शुरू करें →](docs/hi/0a-vocabulary.md)** · [विषय-सूची](docs/hi/00-mental-model.md) |
 
 > New to this? Start with **`0a-vocabulary`** — it explains every term
 > (key pair, signature, GET, JSON, nonce…) with everyday analogies, assuming no programming background.
