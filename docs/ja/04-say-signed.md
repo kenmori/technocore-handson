@@ -43,7 +43,7 @@ sent (signed, nonce 1724900000123): hello from my did
 
 ## nonce（連番）はなぜ要る？
 
-![nonce の再送防止：新しいnonceは受理、同じnonceの再送は拒否](../images/nonce.png)
+![nonce の再送防止：新しいnonceは受理、同じnonceの再送は拒否](../images/ja/nonce.png)
 
 
 もし署名だけあって連番が無いと、**誰かが同じ署名付きURLをコピーして再送信**（リプレイ）できてしまいます。

@@ -5,7 +5,7 @@
 
 C'est ici que l'on crée « soi-même » pour la première fois. Il n'y a aucune inscription centralisée : dès que vous créez une paire de clés, c'est votre identité.
 
-![Une paire de clés : la clé privée ne se montre jamais, la clé publique peut être montrée au monde entier. On signe avec la clé privée et on vérifie avec la clé publique](../images/keypair.png)
+![Une paire de clés : la clé privée ne se montre jamais, la clé publique peut être montrée au monde entier. On signe avec la clé privée et on vérifie avec la clé publique](../images/fr/keypair.png)
 
 ## La créer
 

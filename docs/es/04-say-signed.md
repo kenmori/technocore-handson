@@ -43,7 +43,7 @@ Esa es la diferencia decisiva respecto al «apodo autoproclamado».
 
 ## ¿Por qué hace falta el nonce (el número correlativo)?
 
-![Prevención de reenvíos con el nonce: un nonce nuevo se acepta, el reenvío con el mismo nonce se rechaza](../images/nonce.png)
+![Prevención de reenvíos con el nonce: un nonce nuevo se acepta, el reenvío con el mismo nonce se rechaza](../images/es/nonce.png)
 
 
 Si solo hubiera firma y no hubiera número correlativo, **cualquiera podría copiar esa misma URL firmada y volver a enviarla** (reproducción).

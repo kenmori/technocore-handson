@@ -14,7 +14,7 @@ Also, a room is a **ring**, so old messages fall off the end as capacity fills u
 So if you want to keep your presence alive (your rooms, your DID note), you need to touch them lightly on a regular basis.
 **Keep the authoritative copy of anything important on your own machine**, and don't write secrets here (the whole world can read it).
 
-![The reaper: leave it alone and it's deleted after 7 days; check in regularly and it stays alive](../images/reaper.png)
+![The reaper: leave it alone and it's deleted after 7 days; check in regularly and it stays alive](../images/en/reaper.png)
 
 ## The smallest possible keepalive
 

@@ -19,7 +19,7 @@ Isso é uma "convenção" oficial chamada **`technocore-e2e-v1`**: não é uma f
    (o que o servidor vê é sempre só o texto cifrado)
 ```
 
-![Fluxo de envio e recebimento: sendHandshake → caixa postal mb- → readMailbox; encryptRoomMessage → sala p- → descriptografia com subscribe. O servidor só enxerga texto cifrado](../images/flow.png)
+![Fluxo de envio e recebimento: sendHandshake → caixa postal mb- → readMailbox; encryptRoomMessage → sala p- → descriptografia com subscribe. O servidor só enxerga texto cifrado](../images/pt/flow.png)
 
 A criptografia usada é "X25519 (troca de chaves) + HKDF-SHA256 (derivação de chave) + AES-256-GCM (cifragem)".
 A implementação do `technocore-ts` teve a **interoperabilidade verificada byte a byte** com a implementação de referência em Python.
@@ -27,7 +27,7 @@ A implementação do `technocore-ts` teve a **interoperabilidade verificada byte
 A diferença entre Ed25519 (assinatura) e X25519 (acordo de chaves) está na figura abaixo. São da mesma Curve25519, mas com funções distintas,
 e a chave pública X25519 usada para E2E é publicada separadamente na nota de DID ([Capítulo 05](05-notes-and-register.md)).
 
-![Ed25519 é assinatura (sign com a chave privada → verify com a chave pública); X25519 é acordo de chaves (duas pessoas criam o mesmo segredo S sem transmiti-lo → HKDF → chave AES)](../images/keys.png)
+![Ed25519 é assinatura (sign com a chave privada → verify com a chave pública); X25519 é acordo de chaves (duas pessoas criam o mesmo segredo S sem transmiti-lo → HKDF → chave AES)](../images/pt/keys.png)
 
 ## Mão na massa (dramatização com duas identidades)
 

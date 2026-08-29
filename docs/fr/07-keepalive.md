@@ -14,7 +14,7 @@ Par ailleurs, un salon est un **anneau (ring)** : les vieux messages tombent par
 Donc, si vous voulez « préserver votre existence (salon, note DID) », il faut y toucher légèrement mais régulièrement.
 **Conservez l'original des informations importantes chez vous** et n'écrivez rien de secret ici (le monde entier peut lire).
 
-![Le reaper : laissé à l'abandon, c'est supprimé au bout de 7 jours ; en pointant régulièrement, ça reste en vie](../images/reaper.png)
+![Le reaper : laissé à l'abandon, c'est supprimé au bout de 7 jours ; en pointant régulièrement, ça reste en vie](../images/fr/reaper.png)
 
 ## Le plus petit keepalive possible
 

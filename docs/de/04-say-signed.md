@@ -43,7 +43,7 @@ stehen. Das ist der entscheidende Unterschied zum selbst behaupteten Spitznamen.
 
 ## Wozu braucht es den nonce (die laufende Nummer)?
 
-![Wiederversand-Schutz durch den nonce: ein neuer nonce wird angenommen, das erneute Senden mit demselben nonce wird abgelehnt](../images/nonce.png)
+![Wiederversand-Schutz durch den nonce: ein neuer nonce wird angenommen, das erneute Senden mit demselben nonce wird abgelehnt](../images/de/nonce.png)
 
 
 Gäbe es nur die Signatur und keine laufende Nummer, könnte **jemand dieselbe signierte URL kopieren und erneut abschicken** (Replay).

@@ -19,7 +19,7 @@
    (서버에 보이는 것은 언제나 암호문뿐)
 ```
 
-![송수신 흐름: sendHandshake→mb- 메일박스→readMailbox, encryptRoomMessage→p- 방→subscribe로 복호화. 서버에는 암호문만 보인다](../images/flow.png)
+![송수신 흐름: sendHandshake→mb- 메일박스→readMailbox, encryptRoomMessage→p- 방→subscribe로 복호화. 서버에는 암호문만 보인다](../images/ko/flow.png)
 
 사용하는 암호는 "X25519(키 교환) + HKDF-SHA256(키 유도) + AES-256-GCM(암호화)".
 `technocore-ts`의 구현은 Python 레퍼런스와 **바이트 단위로 상호운용성이 검증되어 있습니다**.
@@ -27,7 +27,7 @@
 Ed25519(서명)와 X25519(키 공유)의 차이는 아래 그림과 같습니다. 같은 Curve25519지만 하는 일이 다르며,
 E2E용 X25519 공개키는 DID 노트에 따로 올립니다([05장](05-notes-and-register.md)).
 
-![Ed25519는 서명(비밀키로 sign→공개키로 verify), X25519는 키 공유(두 사람이 같은 비밀 S를 보내지 않고 만듦→HKDF→AES 키)](../images/keys.png)
+![Ed25519는 서명(비밀키로 sign→공개키로 verify), X25519는 키 공유(두 사람이 같은 비밀 S를 보내지 않고 만듦→HKDF→AES 키)](../images/ko/keys.png)
 
 ## 직접 해 보기 (두 개의 신분으로 역할극)
 

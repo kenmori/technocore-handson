@@ -5,7 +5,7 @@
 
 Aquí creamos por primera vez nuestro «yo». No existe ningún registro de cuenta centralizado: si creas un par de claves, eso es tu identidad.
 
-![El par de claves: la clave privada no se enseña jamás; la clave pública se puede mostrar al mundo entero. Se firma con la clave privada y se verifica con la clave pública](../images/keypair.png)
+![El par de claves: la clave privada no se enseña jamás; la clave pública se puede mostrar al mundo entero. Se firma con la clave privada y se verifica con la clave pública](../images/es/keypair.png)
 
 ## Crearlo
 

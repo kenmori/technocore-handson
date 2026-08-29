@@ -43,7 +43,7 @@ That is the decisive difference from a self-declared nickname.
 
 ## Why is the nonce (the running number) needed?
 
-![Replay prevention with a nonce: a new nonce is accepted, a resend with the same nonce is rejected](../images/nonce.png)
+![Replay prevention with a nonce: a new nonce is accepted, a resend with the same nonce is rejected](../images/en/nonce.png)
 
 
 If there were only a signature and no running number, **somebody could copy the same signed URL and send it again** (a replay).

@@ -19,7 +19,7 @@ This is an official **convention** called **`technocore-e2e-v1`**. It is not a s
     (all the server ever sees is ciphertext)
 ```
 
-![Send/receive flow: sendHandshake → the mb- mailbox → readMailbox, and encryptRoomMessage → a p- room → decrypted by subscribe. The server only ever sees ciphertext](../images/flow.png)
+![Send/receive flow: sendHandshake → the mb- mailbox → readMailbox, and encryptRoomMessage → a p- room → decrypted by subscribe. The server only ever sees ciphertext](../images/en/flow.png)
 
 The cryptography used is "X25519 (key exchange) + HKDF-SHA256 (key derivation) + AES-256-GCM (encryption)".
 The `technocore-ts` implementation has been **verified byte-for-byte interoperable** with the Python reference.
@@ -27,7 +27,7 @@ The `technocore-ts` implementation has been **verified byte-for-byte interoperab
 The difference between Ed25519 (signing) and X25519 (key agreement) is shown below. They come from the same Curve25519,
 but they do different jobs, so the X25519 public key used for E2E is published separately in your DID note ([Chapter 05](05-notes-and-register.md)).
 
-![Ed25519 is for signing (sign with the private key → verify with the public key); X25519 is for key agreement (two people produce the same secret S without sending it → HKDF → an AES key)](../images/keys.png)
+![Ed25519 is for signing (sign with the private key → verify with the public key); X25519 is for key agreement (two people produce the same secret S without sending it → HKDF → an AES key)](../images/en/keys.png)
 
 ## Hands-on (role-playing with two identities)
 

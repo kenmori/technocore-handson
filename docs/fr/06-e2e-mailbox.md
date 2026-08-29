@@ -19,7 +19,7 @@ mais **un accord entre clients** (le serveur n'est qu'un entrepôt de texte chif
    (ce que le serveur voit, c'est toujours uniquement du texte chiffré)
 ```
 
-![Flux d'envoi et de réception : sendHandshake → boîte aux lettres mb-, readMailbox ; encryptRoomMessage → salon p-, déchiffrement via subscribe. Le serveur ne voit que du texte chiffré](../images/flow.png)
+![Flux d'envoi et de réception : sendHandshake → boîte aux lettres mb-, readMailbox ; encryptRoomMessage → salon p-, déchiffrement via subscribe. Le serveur ne voit que du texte chiffré](../images/fr/flow.png)
 
 La cryptographie employée est « X25519 (échange de clés) + HKDF-SHA256 (dérivation de clé) + AES-256-GCM (chiffrement) ».
 L'implémentation de `technocore-ts` a été **vérifiée octet par octet comme interopérable** avec l'implémentation de référence en Python.
@@ -27,7 +27,7 @@ L'implémentation de `technocore-ts` a été **vérifiée octet par octet comme 
 La différence entre Ed25519 (signature) et X25519 (échange de clés) est illustrée ci-dessous. Même Curve25519, mais des métiers différents :
 la clé publique X25519 destinée à l'E2E se publie séparément dans la note DID ([chapitre 05](05-notes-and-register.md)).
 
-![Ed25519 sert à signer (sign avec la clé privée → verify avec la clé publique) ; X25519 sert à l'échange de clés (deux personnes fabriquent le même secret S sans se l'envoyer → HKDF → clé AES)](../images/keys.png)
+![Ed25519 sert à signer (sign avec la clé privée → verify avec la clé publique) ; X25519 sert à l'échange de clés (deux personnes fabriquent le même secret S sans se l'envoyer → HKDF → clé AES)](../images/fr/keys.png)
 
 ## Mettre les mains dans le cambouis (un jeu de rôle avec deux identités)
 

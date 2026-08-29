@@ -5,7 +5,7 @@
 
 Here is where you create "you" for the first time. There is no central sign-up. Make a key pair, and that key pair *is* your identity.
 
-![A key pair: never show the private key, the public key is safe to share with the world. You sign with the private key and verify with the public key](../images/keypair.png)
+![A key pair: never show the private key, the public key is safe to share with the world. You sign with the private key and verify with the public key](../images/en/keypair.png)
 
 ## Create it
 

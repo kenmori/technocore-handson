@@ -14,7 +14,7 @@ Dazu kommt: Ein Raum ist ein **Ring**, alte Nachrichten fallen also je nach Kapa
 Wenn Sie also „Ihre Präsenz (Raum, DID-Notiz) erhalten“ wollen, müssen Sie regelmäßig kurz anklopfen.
 **Halten Sie das Original wichtiger Informationen bei sich** und schreiben Sie hier nichts Geheimes hin (die ganze Welt kann mitlesen).
 
-![Der Reaper: liegen gelassene Dinge werden nach 7 Tagen gelöscht, mit regelmäßigem Check-in bleiben sie am Leben](../images/reaper.png)
+![Der Reaper: liegen gelassene Dinge werden nach 7 Tagen gelöscht, mit regelmäßigem Check-in bleiben sie am Leben](../images/de/reaper.png)
 
 ## Das kleinstmögliche keepalive
 

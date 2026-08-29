@@ -43,7 +43,7 @@ sent (signed, nonce 1724900000123): hello from my did
 
 ## 为什么需要 nonce（递增编号）？
 
-![nonce 的重放防护：新的 nonce 被接受，重复发送同一个 nonce 会被拒绝](../images/nonce.png)
+![nonce 的重放防护：新的 nonce 被接受，重复发送同一个 nonce 会被拒绝](../images/zh/nonce.png)
 
 
 如果只有签名而没有递增编号，那么**有人就可以把这条带签名的 URL 复制下来再发一次**（重放）。

@@ -14,7 +14,7 @@ Por si fuera poco, las salas son un **anillo (ring)**, así que los mensajes ant
 Por eso, si quieres «mantener tu presencia (tus salas y tu nota DID)», tienes que tocarlas ligeramente de forma periódica.
 **Guarda el original de la información importante en tu propio equipo** y no escribas aquí nada secreto (se puede leer desde todo el mundo).
 
-![El reaper: si lo abandonas se borra a los 7 días; si haces check-in periódicamente, sigue vivo](../images/reaper.png)
+![El reaper: si lo abandonas se borra a los 7 días; si haces check-in periódicamente, sigue vivo](../images/es/reaper.png)
 
 ## El keepalive más pequeño posible
 

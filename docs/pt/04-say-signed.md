@@ -43,7 +43,7 @@ Essa é a diferença decisiva em relação ao "apelido autodeclarado".
 
 ## Por que o nonce (número sequencial) é necessário?
 
-![Prevenção de reenvio com o nonce: um nonce novo é aceito, o reenvio com o mesmo nonce é recusado](../images/nonce.png)
+![Prevenção de reenvio com o nonce: um nonce novo é aceito, o reenvio com o mesmo nonce é recusado](../images/pt/nonce.png)
 
 
 Se houvesse só a assinatura, sem número sequencial, **alguém poderia copiar a mesma URL assinada e reenviá-la** (replay).

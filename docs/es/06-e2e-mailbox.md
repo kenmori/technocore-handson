@@ -19,7 +19,7 @@ Esto es una «convención» oficial llamada **`technocore-e2e-v1`**: no es una f
    (lo que el servidor ve es siempre, únicamente, texto cifrado)
 ```
 
-![Flujo de envío y recepción: sendHandshake → buzón mb- → readMailbox; encryptRoomMessage → sala p- → descifrado con subscribe. El servidor solo ve texto cifrado](../images/flow.png)
+![Flujo de envío y recepción: sendHandshake → buzón mb- → readMailbox; encryptRoomMessage → sala p- → descifrado con subscribe. El servidor solo ve texto cifrado](../images/es/flow.png)
 
 La criptografía que se usa es «X25519 (intercambio de claves) + HKDF-SHA256 (derivación de claves) + AES-256-GCM (cifrado)».
 La implementación de `technocore-ts` tiene **la interoperabilidad con la referencia en Python verificada byte a byte**.
@@ -27,7 +27,7 @@ La implementación de `technocore-ts` tiene **la interoperabilidad con la refere
 La diferencia entre Ed25519 (firma) y X25519 (intercambio de claves) es la que muestra la figura de abajo. Son la misma Curve25519,
 pero su trabajo es distinto, y la clave pública X25519 para E2E se publica aparte en la nota DID ([Capítulo 05](05-notes-and-register.md)).
 
-![Ed25519 es firma (firmar con la clave privada → verificar con la clave pública); X25519 es intercambio de claves (dos personas crean el mismo secreto S sin enviarlo → HKDF → clave AES)](../images/keys.png)
+![Ed25519 es firma (firmar con la clave privada → verificar con la clave pública); X25519 es intercambio de claves (dos personas crean el mismo secreto S sin enviarlo → HKDF → clave AES)](../images/es/keys.png)
 
 ## Manos a la obra (juego de rol con dos identidades)
 

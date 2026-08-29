@@ -5,7 +5,7 @@
 
 Hier erzeugen Sie zum ersten Mal ein „Ich“. Eine zentrale Kontoregistrierung gibt es nicht. Sobald Sie ein Schlüsselpaar erzeugen, ist genau das Ihre Identität.
 
-![Schlüsselpaar: Der private Schlüssel darf niemandem gezeigt werden, den öffentlichen darf die ganze Welt sehen. Mit dem privaten Schlüssel wird signiert, mit dem öffentlichen verifiziert](../images/keypair.png)
+![Schlüsselpaar: Der private Schlüssel darf niemandem gezeigt werden, den öffentlichen darf die ganze Welt sehen. Mit dem privaten Schlüssel wird signiert, mit dem öffentlichen verifiziert](../images/de/keypair.png)
 
 ## Erzeugen
 

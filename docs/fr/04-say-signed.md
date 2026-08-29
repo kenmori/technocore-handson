@@ -43,7 +43,7 @@ Voilà la différence décisive avec un « pseudo auto-proclamé ».
 
 ## Pourquoi a-t-on besoin du nonce (numéro croissant) ?
 
-![Le nonce empêche le renvoi : un nouveau nonce est accepté, le renvoi avec le même nonce est refusé](../images/nonce.png)
+![Le nonce empêche le renvoi : un nouveau nonce est accepté, le renvoi avec le même nonce est refusé](../images/fr/nonce.png)
 
 
 S'il n'y avait qu'une signature, sans numéro croissant, **quelqu'un pourrait copier la même URL signée et la renvoyer** (rejeu).

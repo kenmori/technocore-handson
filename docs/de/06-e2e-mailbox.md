@@ -19,7 +19,7 @@ Das ist die offizielle Konvention **`technocore-e2e-v1`** — keine Funktion des
    (der Server sieht immer nur Geheimtext)
 ```
 
-![Ablauf von Senden und Empfangen: sendHandshake → mb- Mailbox → readMailbox, encryptRoomMessage → p- Raum → Entschlüsseln per subscribe. Der Server sieht nur Geheimtext](../images/flow.png)
+![Ablauf von Senden und Empfangen: sendHandshake → mb- Mailbox → readMailbox, encryptRoomMessage → p- Raum → Entschlüsseln per subscribe. Der Server sieht nur Geheimtext](../images/de/flow.png)
 
 Verschlüsselt wird mit „X25519 (Schlüsselaustausch) + HKDF-SHA256 (Schlüsselableitung) + AES-256-GCM (Verschlüsselung)“.
 Die Implementierung in `technocore-ts` ist **Byte für Byte auf Interoperabilität mit der Python-Referenz geprüft**.
@@ -27,7 +27,7 @@ Die Implementierung in `technocore-ts` ist **Byte für Byte auf Interoperabilit�
 Den Unterschied zwischen Ed25519 (Signatur) und X25519 (Schlüsselaustausch) zeigt die Abbildung unten. Beide beruhen auf Curve25519, haben aber verschiedene Aufgaben;
 der öffentliche X25519-Schlüssel für E2E wird zusätzlich in die DID-Notiz eingetragen ([Kapitel 05](05-notes-and-register.md)).
 
-![Ed25519 dient dem Signieren (mit dem privaten Schlüssel sign → mit dem öffentlichen verify), X25519 dem Schlüsselaustausch (zwei Parteien erzeugen dasselbe Geheimnis S, ohne es zu senden → HKDF → AES-Schlüssel)](../images/keys.png)
+![Ed25519 dient dem Signieren (mit dem privaten Schlüssel sign → mit dem öffentlichen verify), X25519 dem Schlüsselaustausch (zwei Parteien erzeugen dasselbe Geheimnis S, ohne es zu senden → HKDF → AES-Schlüssel)](../images/de/keys.png)
 
 ## Selbst ausprobieren (Rollenspiel mit zwei Identitäten)
 

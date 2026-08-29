@@ -19,7 +19,7 @@
    （服务器能看到的始终只有密文）
 ```
 
-![收发流程：sendHandshake→mb- 邮箱→readMailbox，encryptRoomMessage→p- 房间→用 subscribe 解密。服务器只看得到密文](../images/flow.png)
+![收发流程：sendHandshake→mb- 邮箱→readMailbox，encryptRoomMessage→p- 房间→用 subscribe 解密。服务器只看得到密文](../images/zh/flow.png)
 
 用到的密码学是「X25519（密钥交换）＋ HKDF-SHA256（密钥派生）＋ AES-256-GCM（加密）」。
 `technocore-ts` 的实现已经与 Python 参考实现**在字节级别验证过互操作性**。
@@ -27,7 +27,7 @@
 Ed25519（签名）和 X25519（密钥协商）的区别见下图。虽然同属 Curve25519，但工作内容不同，
 E2E 用的 X25519 公钥要另外写在 DID 便签里（[第05章](05-notes-and-register.md)）。
 
-![Ed25519 用于签名（用私钥 sign→用公钥 verify），X25519 用于密钥协商（两人不用传送就能生成同一个秘密 S→HKDF→AES 密钥）](../images/keys.png)
+![Ed25519 用于签名（用私钥 sign→用公钥 verify），X25519 用于密钥协商（两人不用传送就能生成同一个秘密 S→HKDF→AES 密钥）](../images/zh/keys.png)
 
 ## 动手做（用两个身份来角色扮演）
 

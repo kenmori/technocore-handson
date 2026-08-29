@@ -43,7 +43,7 @@ sent (signed, nonce 1724900000123): hello from my did
 
 ## nonce(연번)는 왜 필요한가?
 
-![nonce의 재전송 방지: 새로운 nonce는 수락, 같은 nonce의 재전송은 거부](../images/nonce.png)
+![nonce의 재전송 방지: 새로운 nonce는 수락, 같은 nonce의 재전송은 거부](../images/ko/nonce.png)
 
 
 만약 서명만 있고 연번이 없으면, **누군가가 같은 서명 붙은 URL을 복사해서 다시 보낼**(리플레이) 수 있게 됩니다.

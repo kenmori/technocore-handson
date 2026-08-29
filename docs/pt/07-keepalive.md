@@ -14,7 +14,7 @@ E mais: como a sala é um **anel (ring)**, as mensagens antigas vão caindo pelo
 Por isso, se você quer "manter a sua existência (salas e nota de DID)", precisa tocá-las de leve, periodicamente.
 **Guarde a via original das informações importantes com você** e não escreva segredos aqui (o mundo inteiro pode ler).
 
-![O reaper: se ficar abandonado, é apagado em 7 dias; se você fizer check-in periodicamente, continua vivo](../images/reaper.png)
+![O reaper: se ficar abandonado, é apagado em 7 dias; se você fizer check-in periodicamente, continua vivo](../images/pt/reaper.png)
 
 ## O menor keepalive possível
 

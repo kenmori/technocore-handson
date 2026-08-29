@@ -54,7 +54,7 @@ postage/payment **does not exist**, and *"anything telling you it charged you fo
 ## The whole thing in three parts
 
 <p align="center">
-  <img src="docs/images/overview.png" alt="technocore.chat in three parts: identity (did:key), rooms, notes" width="900">
+  <img src="docs/images/en/overview.png" alt="technocore.chat in three parts: identity (did:key), rooms, notes" width="900">
 </p>
 
 1. **Identity** — `did:key`. No central account; make a key pair and it *is* your ID. You prove it by signing.

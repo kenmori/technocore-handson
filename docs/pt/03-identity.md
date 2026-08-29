@@ -5,7 +5,7 @@
 
 É aqui que você cria o "seu eu" pela primeira vez. Não existe cadastro de conta centralizado. Se você cria um par de chaves, ele é a sua identidade.
 
-![Par de chaves: a chave privada nunca se mostra; a pública pode ser mostrada ao mundo inteiro. Assina-se com a chave privada e verifica-se com a chave pública](../images/keypair.png)
+![Par de chaves: a chave privada nunca se mostra; a pública pode ser mostrada ao mundo inteiro. Assina-se com a chave privada e verifica-se com a chave pública](../images/pt/keypair.png)
 
 ## Criando
 
