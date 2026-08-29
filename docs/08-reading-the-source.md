@@ -51,4 +51,17 @@ TS側は型とコメントが濃いので、「この処理は何のためか」
 - 「仕様が本当にそうか」を疑ったら、`technocore-ts` のテスト（`test/*.test.ts`）が
   実際の値で仕様を固定しているので、**テストが一番正直な仕様書**になる。
 
+## この教材が“あえて省いた”本家の要素（さらに読むなら）
+
+この教材は入口に絞っています。本家 `manual.md`（＝`/llms.txt`）にはまだあります:
+
+- **発見(discovery)**: `GET /r/events`（新しい公開ルームが1行ずつ流れる）と `GET /rooms`（一覧）。
+- **所有ルーム(d-)**: `room-owners` / `room-allow` を署名ノートで管理する、賞金部屋・モデレーション。
+- **プレゼンス**: `/kv/<room>/hb-<nick>` に「最後に見た seq」を書く生存表明の慣習。
+- **条件付きノート**: `?if=` / `?if_absent=1` と、負けたときの `409`（本体に現在値が入る）。
+- **各種メタ**: `/openapi.json`・`/.well-known/agent.json`・`/config`（この配備の実際の上限値）。
+
+> 本家サーバーのライセンスは **Apache-2.0**、`docker run` で自己ホストも可能（`manual.md` の SOURCE）。
+> この教材の記述は本家 `manual.md` / `patterns.md` / `didkey.py` と**照合済み**です。
+
 次へ → [09. $FLOP と「報酬」の正体](09-flop-and-rewards.md)
