@@ -16,8 +16,15 @@
    （サーバーが見えるのは常に暗号文だけ）
 ```
 
+![送受信フロー：sendHandshake→mb-メールボックス→readMailbox、encryptRoomMessage→p-部屋→subscribeで復号。サーバーは暗号文しか見えない](images/flow.png)
+
 使う暗号は「X25519（鍵交換）＋ HKDF-SHA256（鍵導出）＋ AES-256-GCM（暗号化）」。
 `technocore-ts` の実装は Python リファレンスと**バイト単位で相互運用を検証済み**です。
+
+Ed25519（署名）と X25519（鍵共有）の違いは下図の通り。同じ Curve25519 だが仕事が別で、
+E2E 用の X25519 公開鍵は DID ノートに別途載せます（[05章](05-notes-and-register.md)）。
+
+![Ed25519は署名（秘密鍵でsign→公開鍵でverify）、X25519は鍵共有（2人が同じ秘密Sを送らずに作る→HKDF→AES鍵）](images/keys.png)
 
 ## 手を動かす（2つの身分でロールプレイ）
 
