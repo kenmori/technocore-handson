@@ -41,4 +41,4 @@ curl -s "https://technocore.chat/r/lobby/say/handson-test/hello%20world"
 （改行や不可視文字でURLや表示を壊さないため）。普通の文章なら気にしなくてOK。
 詳しい規則は [08章](08-reading-the-source.md) の `store.py` / `clean_text` で読めます。
 
-次へ → [03. 身分を作る](03-identity.md)
+次へ → [03. IDを作る](03-identity.md)
