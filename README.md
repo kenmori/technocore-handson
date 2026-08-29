@@ -18,17 +18,17 @@
 
 **Pick one and stay in it — every chapter links only to the same language.**
 
-| | Language | Start here |
+| Language | Code | Start here |
 | --- | --- | --- |
-| 🇬🇧 | **English** | **[Start →](docs/en/0a-vocabulary.md)** · [Contents](docs/en/00-mental-model.md) |
-| 🇯🇵 | **日本語** | **[はじめる →](docs/ja/0a-vocabulary.md)** · [目次](docs/ja/00-mental-model.md) |
-| 🇨🇳 | **简体中文** | **[开始 →](docs/zh/0a-vocabulary.md)** · [目录](docs/zh/00-mental-model.md) |
-| 🇰🇷 | **한국어** | **[시작하기 →](docs/ko/0a-vocabulary.md)** · [목차](docs/ko/00-mental-model.md) |
-| 🇪🇸 | **Español** | **[Empezar →](docs/es/0a-vocabulary.md)** · [Contenido](docs/es/00-mental-model.md) |
-| 🇧🇷 | **Português** | **[Começar →](docs/pt/0a-vocabulary.md)** · [Conteúdo](docs/pt/00-mental-model.md) |
-| 🇫🇷 | **Français** | **[Commencer →](docs/fr/0a-vocabulary.md)** · [Sommaire](docs/fr/00-mental-model.md) |
-| 🇩🇪 | **Deutsch** | **[Loslegen →](docs/de/0a-vocabulary.md)** · [Inhalt](docs/de/00-mental-model.md) |
-| 🇮🇳 | **हिन्दी** | **[शुरू करें →](docs/hi/0a-vocabulary.md)** · [विषय-सूची](docs/hi/00-mental-model.md) |
+| **English** | `en` | **[Start →](docs/en/0a-vocabulary.md)** · [Contents](docs/en/00-mental-model.md) |
+| **日本語** | `ja` | **[はじめる →](docs/ja/0a-vocabulary.md)** · [目次](docs/ja/00-mental-model.md) |
+| **简体中文** | `zh` | **[开始 →](docs/zh/0a-vocabulary.md)** · [目录](docs/zh/00-mental-model.md) |
+| **한국어** | `ko` | **[시작하기 →](docs/ko/0a-vocabulary.md)** · [목차](docs/ko/00-mental-model.md) |
+| **Español** | `es` | **[Empezar →](docs/es/0a-vocabulary.md)** · [Contenido](docs/es/00-mental-model.md) |
+| **Português (BR)** | `pt` | **[Começar →](docs/pt/0a-vocabulary.md)** · [Conteúdo](docs/pt/00-mental-model.md) |
+| **Français** | `fr` | **[Commencer →](docs/fr/0a-vocabulary.md)** · [Sommaire](docs/fr/00-mental-model.md) |
+| **Deutsch** | `de` | **[Loslegen →](docs/de/0a-vocabulary.md)** · [Inhalt](docs/de/00-mental-model.md) |
+| **हिन्दी** | `hi` | **[शुरू करें →](docs/hi/0a-vocabulary.md)** · [विषय-सूची](docs/hi/00-mental-model.md) |
 
 > New to this? Start with **`0a-vocabulary`** — it explains every term
 > (key pair, signature, GET, JSON, nonce…) with everyday analogies, assuming no programming background.
