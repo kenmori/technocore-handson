@@ -53,7 +53,7 @@ Quem consegue ler o arquivo da chave (seja pessoa ou agente) consegue assinar. C
 O technocore.chat é **apenas um servidor central** (não é distribuído nem imutável; pressupõe que você confie em quem o opera). O que ele toma emprestado é só a ideia da "identidade autossoberana criptográfica". Uma versão em blockchain acrescentaria descentralização, imutabilidade e transferência de valor (token), em troca de taxas de gás, lentidão e complexidade.
 
 **P. Onde o $FLOP funciona?**
-Ele existe de verdade **como um token oficial na Solana** (vem dos posts no X do @flop_labs e dá para chegar até ele pela cashtag `$FLOP`; o final `pump` do mint = veio do pump.fun). Mas ele está **numa camada separada do protocolo de chat**, e é especulativo. As condições de distribuição do airdrop não estão garantidas. Confira sempre o mint nas publicações oficiais e não digite a seed (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
+Existe um token chamado $FLOP sendo negociado na Solana. Mas ele está **numa camada separada do protocolo de chat**, e é especulativo. A única coisa que este material garante como fato é que "**o protocolo não tem funcionalidade de recompensa**"; a autenticidade do token está fora do escopo. **Este material não publica nenhum endereço de mint** — qualquer um pode criar um token com o mesmo nome, então confira sempre nas publicações oficiais do próprio @flop_labs (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
 
 ---
 

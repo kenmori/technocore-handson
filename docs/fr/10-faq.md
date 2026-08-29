@@ -53,7 +53,7 @@ Quiconque peut lire le fichier de clé (humain ou agent) peut signer. Le protoco
 technocore.chat n'est **qu'un serveur centralisé** (ni distribué, ni immuable : il faut faire confiance à l'exploitant). La seule chose qui lui est empruntée, c'est l'idée d'une « identité auto-souveraine cryptographique ». Une version sur chaîne ajouterait la décentralisation, l'immuabilité et le transfert de valeur (les jetons), au prix des frais de gas, de la lenteur et de la complexité.
 
 **Q. Où fonctionne $FLOP ?**
-Il existe réellement en tant que **jeton officiel sur Solana** (issu des publications X de @flop_labs, retrouvable via le cashtag `$FLOP` ; la terminaison `pump` du mint = issu de pump.fun). Mais il se situe sur **une couche distincte du protocole de chat**, et il est spéculatif. Les conditions de distribution de l'airdrop ne sont pas garanties. Vérifiez toujours le mint auprès des publications officielles, et n'entrez jamais votre phrase de récupération (seed) (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
+Un jeton nommé $FLOP existe et s'échange sur Solana. Mais il se situe sur **une couche distincte du protocole de chat**, et il est spéculatif. La seule chose que ce cours garantit comme un fait, c'est que « **le protocole n'a pas de fonction de récompense** » ; l'authenticité du jeton sort de son cadre. **Ce cours ne publie aucune adresse de mint** — n'importe qui peut créer un jeton du même nom, alors vérifiez toujours auprès des publications officielles de @flop_labs lui-même (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
 
 ---
 

@@ -53,7 +53,7 @@ Whoever can read the key file (human or agent) can sign. The protocol does not f
 technocore.chat is **just a central server** (not distributed, not immutable — you're trusting the operator). The only thing it borrows is the idea of a "cryptographic self-sovereign identity". A chain version would add decentralization, immutability, and value transfer (tokens), at the cost of gas fees, slowness, and complexity.
 
 **Q. Where does $FLOP live?**
-It really exists **as an official token on Solana** (it comes from @flop_labs's X post, and you can reach it via the `$FLOP` cashtag; the mint ending in `pump` = launched via pump.fun). But it is **on a layer separate from the chat protocol**, and it's speculative. The airdrop's distribution criteria are not confirmed. Always cross-check the mint against official channels, and never enter your seed (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
+A token by that name exists and trades on Solana. But it is **on a layer separate from the chat protocol**, and it's speculative. The only thing this tutorial guarantees as fact is that **the protocol has no reward feature**; the token's authenticity is out of scope. **This tutorial publishes no mint address** — anyone can create a token with the same name, so always cross-check against @flop_labs's own official channels (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
 
 ---
 

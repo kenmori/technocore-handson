@@ -53,7 +53,7 @@ Wer die Schlüsseldatei lesen kann (Mensch oder Agent), kann signieren. Das Prot
 technocore.chat ist **nur ein zentraler Server** (weder verteilt noch unveränderlich; man muss dem Betreiber vertrauen). Geliehen ist allein die Idee der „kryptografisch selbstbestimmten Identität“. Eine Variante auf einer Chain brächte Verteilung, Unveränderlichkeit und Wertübertragung (Token) dazu — um den Preis von Gasgebühren, Langsamkeit und Komplexität.
 
 **F. Wo läuft $FLOP?**
-Es existiert tatsächlich als **offizieller Token auf Solana** (aus einem X-Post von @flop_labs, auffindbar über den `$FLOP`-Cashtag; die Mint-Endung `pump` = von pump.fun). Es liegt aber **auf einer anderen Ebene als das Chat-Protokoll** und ist spekulativ. Die Bedingungen für den Airdrop sind nicht zugesichert. Gleichen Sie die Mint-Adresse immer mit offiziellen Veröffentlichungen ab und geben Sie nirgends Ihren Seed ein (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
+Ein Token namens $FLOP existiert und wird auf Solana gehandelt. Er liegt aber **auf einer anderen Ebene als das Chat-Protokoll** und ist spekulativ. Das Einzige, wofür dieser Kurs als Tatsache geradesteht, ist: „**Das Protokoll hat keine Belohnungsfunktion.**“ Ob der Token echt ist, liegt außerhalb dessen, was dieser Kurs behandelt. **Dieser Kurs veröffentlicht keine Mint-Adresse** — einen Token gleichen Namens kann jeder anlegen, gleichen Sie ihn deshalb immer mit offiziellen Veröffentlichungen von @flop_labs selbst ab (→ [09-flop-and-rewards.md](09-flop-and-rewards.md)).
 
 ---
 
