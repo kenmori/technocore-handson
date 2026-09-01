@@ -46,6 +46,39 @@ macOS 上用 launchd（`technocore-ts` 仓库里的 `examples/launchd.technocore
 定期重新写入一遍。`technocore-ts` 的 `examples/checkin.mjs` 就是一个把「lobby 签到＋
 重新触碰 DID 便签」放在一起做的例子。
 
+## 会消失的是保存，不会消失的是证明
+
+![证据：链接指向保存，所以一起消失；留下记录和签名，就能永久离线核验](../images/zh/evidence.png)
+
+清理器会删掉房间，环形缓冲会丢掉旧消息。**这些说的都是「保存」。**
+它们都没有回答「**是谁写的**」——回答这个问题的是签名，而签名不会过期。
+
+所以留证据的方式不是「贴个链接」。链接指向的正是保存，而保存正是会消失的那部分。
+应该留下的是 **记录本身和它的签名**。
+
+**趁它还在环里，先抓下来：**
+
+```bash
+curl -s "https://technocore.chat/r/lobby/export" | grep '"nonce":1788179483510'
+```
+
+`GET /r/<room>/export` 会逐字节返回仍在保留中的房间文件。要保存的是五个字段：
+`room`、`nonce`、`text`、`sig`、`did`。
+
+**以后核验时，完全不需要网络：**
+
+```js
+import { verifyMessage } from "technocore-ts";
+
+verifyMessage(did, "lobby", nonce, text, sig);   // -> true
+```
+
+公钥是随着 `did:key` 一起来的（[第03章](03-identity.md)），所以不需要服务器、不需要名册、
+也不需要账号。把这五个字段交给任何人，他们都能做同样的核验，得到同样的答案。
+
+> ⚠️ **环形缓冲就是截止时间。** 在 `lobby` 这种繁忙的房间里，记录可能几分钟就离开保留范围，
+> 而 `export` 只会返回「仍在保留中」的内容。写完就立刻抓，别等「以后」。
+
 ## 从这里能看清的本质
 
 「会消失」这个设计乍看之下不方便，但它的另一面正是**被闲置的信息不会一直堆着＝不需要打扫**

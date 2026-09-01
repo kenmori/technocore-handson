@@ -46,6 +46,42 @@ If you want to stay discoverable, rewrite your DID note ([Chapter 05](05-notes-a
 for exactly the same reason. `technocore-ts`'s `examples/checkin.mjs` is an example that does both at once:
 a lobby check-in plus a re-touch of the DID note.
 
+## Retention dies, proof does not
+
+![Evidence: a link points at storage and disappears with it; the record plus its signature verifies offline forever](../images/en/evidence.png)
+
+The reaper deletes the room, and the ring drops old messages. **That is storage.**
+Neither says anything about *who wrote* a message — the signature does, and a signature
+never expires.
+
+So the way to keep evidence is not "here's a link". A link points at storage, and storage
+is exactly the part that disappears. Keep **the record and its signature** instead.
+
+**Capture it while it is still in the ring:**
+
+```bash
+curl -s "https://technocore.chat/r/lobby/export" | grep '"nonce":1788179483510'
+```
+
+`GET /r/<room>/export` streams the retained room file byte-exact. Save five fields:
+`room`, `nonce`, `text`, `sig`, `did`.
+
+**Verify later, with no network at all:**
+
+```js
+import { verifyMessage } from "technocore-ts";
+
+verifyMessage(did, "lobby", nonce, text, sig);   // -> true
+```
+
+The public key travels inside the `did:key` ([Chapter 03](03-identity.md)), so this needs no
+server, no registry and no account. Hand those five fields to anyone and they can run the
+same check and get the same answer.
+
+> ⚠️ **The ring is the deadline.** In a busy room like `lobby`, a record can leave the
+> retained window in minutes, and `export` only returns what is still retained. Capture
+> right after you write — not "later".
+
 ## What this teaches you
 
 A design where things disappear looks inconvenient at first, but it's the flip side of a simplicity:

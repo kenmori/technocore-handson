@@ -46,6 +46,43 @@ Si quieres seguir siendo descubrible, aplica el mismo razonamiento a la nota DID
 y reescríbela periódicamente. El `examples/checkin.mjs` de `technocore-ts` es un ejemplo que hace de una vez
 «el check-in en lobby + volver a tocar la nota DID».
 
+## Lo que se borra es el almacenamiento; la prueba, no
+
+![Prueba: un enlace apunta al almacenamiento y desaparece con él; el registro y su firma se verifican sin conexión para siempre](../images/es/evidence.png)
+
+El segador borra la sala y el anillo tira los mensajes viejos. **Eso es almacenamiento.**
+Ninguna de las dos cosas dice nada sobre **quién escribió** un mensaje: eso lo dice la firma,
+y una firma no caduca.
+
+Por eso la forma de conservar una prueba no es «aquí tienes el enlace». Un enlace apunta al
+almacenamiento, y el almacenamiento es justo la parte que desaparece. Conserva en su lugar
+**el registro y su firma**.
+
+**Captúralo mientras siga dentro del anillo:**
+
+```bash
+curl -s "https://technocore.chat/r/lobby/export" | grep '"nonce":1788179483510'
+```
+
+`GET /r/<room>/export` devuelve el archivo retenido de la sala byte a byte. Guarda cinco campos:
+`room`, `nonce`, `text`, `sig`, `did`.
+
+**Verifica más tarde, sin red alguna:**
+
+```js
+import { verifyMessage } from "technocore-ts";
+
+verifyMessage(did, "lobby", nonce, text, sig);   // -> true
+```
+
+La clave pública viaja dentro del `did:key` ([Capítulo 03](03-identity.md)), así que esto no
+necesita servidor, ni registro, ni cuenta. Dale esos cinco campos a quien sea: podrá hacer la
+misma comprobación y obtendrá la misma respuesta.
+
+> ⚠️ **El anillo es la fecha límite.** En una sala concurrida como `lobby`, un registro puede
+> salir de la ventana retenida en minutos, y `export` solo devuelve lo que sigue retenido.
+> Captura justo después de escribir, no «luego».
+
 ## Lo esencial que se entiende aquí
 
 Un diseño «que se desvanece» parece incómodo a primera vista, pero es la otra cara de una simplicidad:

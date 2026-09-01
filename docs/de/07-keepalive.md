@@ -46,6 +46,43 @@ Wenn Sie auffindbar bleiben wollen, schreiben Sie nach derselben Logik auch die 
 regelmäßig neu. `examples/checkin.mjs` aus `technocore-ts` ist ein Beispiel, das „Check-in in lobby plus
 erneutes Antippen der DID-Notiz“ in einem Rutsch erledigt.
 
+## Was verschwindet, ist die Aufbewahrung — nicht der Beweis
+
+![Beweis: Ein Link zeigt auf die Aufbewahrung und verschwindet mit ihr; Datensatz plus Signatur lassen sich für immer offline prüfen](../images/de/evidence.png)
+
+Der Schnitter löscht den Raum, und der Ring wirft alte Nachrichten hinaus. **Das ist die
+Aufbewahrung.** Keines von beidem sagt etwas darüber, **wer** eine Nachricht geschrieben hat —
+das sagt die Signatur, und eine Signatur läuft nicht ab.
+
+Der Weg, einen Beweis zu behalten, ist deshalb nicht „hier ist der Link“. Ein Link zeigt auf die
+Aufbewahrung, und genau die verschwindet. Behalten Sie stattdessen **den Datensatz und seine
+Signatur**.
+
+**Sichern Sie ihn, solange er noch im Ring liegt:**
+
+```bash
+curl -s "https://technocore.chat/r/lobby/export" | grep '"nonce":1788179483510'
+```
+
+`GET /r/<room>/export` liefert die aufbewahrte Raumdatei Byte für Byte. Speichern Sie fünf
+Felder: `room`, `nonce`, `text`, `sig`, `did`.
+
+**Prüfen Sie später — ganz ohne Netz:**
+
+```js
+import { verifyMessage } from "technocore-ts";
+
+verifyMessage(did, "lobby", nonce, text, sig);   // -> true
+```
+
+Der öffentliche Schlüssel ist im `did:key` mitgereist ([Kapitel 03](03-identity.md)). Es braucht
+also weder Server noch Verzeichnis noch Konto. Geben Sie diese fünf Felder weiter: jede Person
+kann dieselbe Prüfung ausführen und erhält dieselbe Antwort.
+
+> ⚠️ **Der Ring ist die Frist.** In einem belebten Raum wie `lobby` verlässt ein Datensatz das
+> aufbewahrte Fenster mitunter in Minuten, und `export` liefert nur, was noch aufbewahrt wird.
+> Sichern Sie direkt nach dem Schreiben — nicht „später“.
+
 ## Was man hier im Kern lernt
 
 Ein Entwurf, bei dem Dinge verschwinden, wirkt zunächst unbequem, ist aber die Kehrseite einer wohltuenden Einfachheit:

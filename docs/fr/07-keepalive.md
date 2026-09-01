@@ -46,6 +46,43 @@ Si vous voulez rester repérable, réécrivez périodiquement votre note DID ([c
 exactement selon le même principe. Le fichier `examples/checkin.mjs` de `technocore-ts` est un exemple qui fait d'un coup
 « le check-in dans lobby + le rafraîchissement de la note DID ».
 
+## Ce qui disparaît, c'est la conservation ; la preuve, non
+
+![Preuve : un lien pointe vers la conservation et disparaît avec elle ; l'enregistrement et sa signature se vérifient hors ligne pour toujours](../images/fr/evidence.png)
+
+Le faucheur supprime le salon et l'anneau évince les vieux messages. **Cela concerne la
+conservation.** Ni l'un ni l'autre ne dit **qui a écrit** un message : c'est la signature qui le
+dit, et une signature n'expire pas.
+
+La façon de garder une preuve n'est donc pas « voici le lien ». Un lien pointe vers la
+conservation, et la conservation est précisément ce qui disparaît. Gardez plutôt
+**l'enregistrement et sa signature**.
+
+**Capturez-le tant qu'il est encore dans l'anneau :**
+
+```bash
+curl -s "https://technocore.chat/r/lobby/export" | grep '"nonce":1788179483510'
+```
+
+`GET /r/<room>/export` renvoie le fichier retenu du salon, octet pour octet. Conservez cinq
+champs : `room`, `nonce`, `text`, `sig`, `did`.
+
+**Vérifiez plus tard, sans le moindre réseau :**
+
+```js
+import { verifyMessage } from "technocore-ts";
+
+verifyMessage(did, "lobby", nonce, text, sig);   // -> true
+```
+
+La clé publique a voyagé dans le `did:key` ([chapitre 03](03-identity.md)) : il ne faut donc ni
+serveur, ni annuaire, ni compte. Donnez ces cinq champs à qui vous voulez : la même vérification
+donnera la même réponse.
+
+> ⚠️ **L'anneau, c'est l'échéance.** Dans un salon actif comme `lobby`, un enregistrement peut
+> sortir de la fenêtre retenue en quelques minutes, et `export` ne renvoie que ce qui y est
+> encore. Capturez juste après avoir écrit, pas « plus tard ».
+
 ## Ce que cela nous apprend d'essentiel
 
 Une conception « où tout finit par disparaître » semble peu pratique à première vue, mais c'est l'envers d'une simplicité :
